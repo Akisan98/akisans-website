@@ -1,0 +1,107 @@
+$max-font-size: 3.8rem;
+
+.hero {
+    font-family: 'Roboto', Arial;
+    min-height: calc(100vh - 56px);
+    background: linear-gradient(rgba(251, 242, 255, .8), rgba(251, 242, 255, .8)), url('/assets/hand-wave-m.png');
+    background-repeat: no-repeat;
+    // background-size: contain;
+    background-size: auto 65%;
+    background-position: center right;
+    background-color: rgb(251, 242, 255);
+}
+
+.hero .content {
+    padding-left: max(7%, 16px);
+    padding-top: 20vh
+}
+
+.margin {
+    margin-top: 1.5rem;
+}
+
+.extended {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* Override Bootstrap */
+.btn-primary {
+    background-color: #674576;
+    border-color: #674576;
+    
+    &:hover, &:focus, &:active, .active, .open .dropdown-toggle{ 
+        box-shadow: 0 0 0 0.25rem rgb(103 69 118 / 50%);
+    }
+}
+
+.bg-light {
+    background-color: #E9E1ED !important;
+}
+
+/* Landscape - Mobile Devices */
+@media (min-width: 500px) and (max-width: 649px) and (orientation:landscape) {
+    .hero {
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 650px) and (orientation:landscape) {
+    .hero {
+        background: url('/assets/hand-wave-m.png'), #FBF2FF;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+    .hero {
+        background: url('/assets/hand-wave-m.png'), #FBF2FF;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    $max-font-size: 7rem;
+
+    h1 {
+        font-size: $max-font-size  !important;
+    }
+
+    .four-times{
+        font-size: $max-font-size / 2  !important;
+    }
+    
+    .two-times {
+        font-size:  $max-font-size / 4  !important;
+    }
+    
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: $max-font-size;
+    margin-bottom: 1rem;
+}
+
+.four-times{
+    font-size: $max-font-size / 2;
+}
+
+.two-times {
+    font-size:  $max-font-size / 4;
+}
+
+.text-no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.w900, span {
+  font-weight: 900;
+}
