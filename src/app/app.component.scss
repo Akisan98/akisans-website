@@ -16,8 +16,21 @@ $max-font-size: 3.8rem;
     padding-top: 20vh
 }
 
+.projects {
+    padding: max(7%, 16px);
+}
+@media (min-width: 992px) {
+    .projects2 {
+        padding: 0 32px;
+    }
+}
+
+.bottom-margin{
+    margin-bottom: 2rem;
+}
+
 .margin {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .extended {
@@ -72,6 +85,10 @@ $max-font-size: 3.8rem;
         font-size: $max-font-size  !important;
     }
 
+    h2 {
+        font-size: $max-font-size / 2 !important;
+    }
+
     .four-times{
         font-size: $max-font-size / 2  !important;
     }
@@ -87,6 +104,11 @@ h1 {
     font-weight: normal;
     font-size: $max-font-size;
     margin-bottom: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: $max-font-size / 2;
 }
 
 .four-times{

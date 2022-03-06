@@ -1,0 +1,96 @@
+h3 {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+h3, p {
+    font-family: 'Roboto', Arial;
+}
+
+.accent-color {
+    color: #674576;
+}
+
+.project-card {
+    padding: 16px 0;
+}
+
+.w100 {
+    font-weight: 200;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media (min-width: 992px) {
+    img {
+        height: 50vh;
+        width: 100%;object-fit: cover;
+    }
+
+    .project-card {
+        padding: 32px 24px;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Landscape - Mobile Devices */
+@media (max-height: 649px) and (orientation:landscape) {
+    img {
+        height: 65vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 500px) and(max-width: 991px) and (orientation: portrait) {
+    img {
+        height: 35vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.text-no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-urls ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-urls {
+    display: inline-block;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+
+
+.feather {
+    width: 21px;
+    height: 21px;
+    stroke: #674576;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+li:nth-child(n+2) {
+    margin: 0 8px;
+}
+
+li:first-child {
+    margin-right: 8px;
+}
