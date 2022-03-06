@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#featured-projects-title">Projects</a>
         <a class="nav-link" href="#">About</a>
         <a class="nav-link disabled">Disabled</a>
       </div>
@@ -27,19 +27,36 @@
 <section aria-labelledby="featured-projects-title" class="projects">
   <h2 id="featured-projects-title" class="projects2">Featured Projects</h2>
   
-  <div class="row"><app-featured-project class="col-lg-6" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
+  <div class="row"><app-featured-project class="col-md-6" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
   </app-featured-project>
   
-  <app-featured-project class="col-lg-6" title="Binge" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
-  </app-featured-project></div>
-  
-  <div class="row"><app-featured-project class="col-lg-6" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
+  <app-featured-project class="col-md-6" title="Binge" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
+  </app-featured-project><app-featured-project class="col-md-6" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
   </app-featured-project>
   
-  <app-featured-project class="col-lg-6" title="Binge" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
+  <app-featured-project class="col-md-6" title="Binge" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
   </app-featured-project></div>
-  <h3>h3 test</h3>
-  <h4>h4 test</h4>
-  <h5>h5 test</h5>
-  <h6>h6 tests</h6>
+  
+</section>
+
+<section class="othersPro">
+  <h2 id="featured-projects-title" class="projects2">Other Projects</h2>
+  <div class="row other-container"> <!-- Bootstap 4+ based on Flex which make this okey -->
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+  </div>
 </section>

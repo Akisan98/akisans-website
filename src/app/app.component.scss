@@ -16,7 +16,7 @@ $max-font-size: 3.8rem;
     padding-top: 20vh
 }
 
-.projects {
+.projects, .othersPro {
     padding: max(7%, 16px);
 }
 @media (min-width: 992px) {
@@ -97,6 +97,9 @@ $max-font-size: 3.8rem;
         font-size:  $max-font-size / 4  !important;
     }
     
+    .other-container {
+        padding: 32px 24px;
+    }
 }
 
 h1 {

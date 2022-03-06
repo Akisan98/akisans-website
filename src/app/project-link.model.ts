@@ -4,3 +4,10 @@ export interface ProjectLink {
     external?: string,
     project?: string
 }
+
+export interface ProjectView {
+    title: String;
+    platform: String;
+    tools: String;
+    buttons: ProjectLink;
+}
