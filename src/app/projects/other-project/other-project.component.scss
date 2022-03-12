@@ -4,6 +4,12 @@
     border-radius: 8px;
     margin: 16px 0;
     height: calc(100% - 32px);
+    display: flex;
+    flex-flow: column;
+}
+
+.spacer {
+    flex: 1 1 auto;
 }
 
 .project-urls ol {
