@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { FeaturedProjectComponent } from './featured-project/featured-project.component';
-import { OtherProjectComponent } from './other-project/other-project.component';
+import { FeaturedProjectComponent } from './projects/featured-project/featured-project.component';
+import { OtherProjectComponent } from './projects/other-project/other-project.component';
 
 @NgModule({
   declarations: [

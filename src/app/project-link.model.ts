@@ -1,14 +1,16 @@
 export interface ProjectLink {
     github?: string,
+    gitlab?: string,
     googlePlay?: string,
     figma?: string,
     external?: string,
     project?: string
 }
 
-export interface ProjectView {
-    title: String;
-    platform: String;
-    tools: String;
+export interface Project{
+    title: string;
+    platform: string;
+    tools: string;
+    image?: string;
     buttons: ProjectLink;
 }

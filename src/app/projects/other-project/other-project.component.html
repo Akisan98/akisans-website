@@ -1,12 +1,12 @@
 <div class="project-card">
-    <img src="/assets/project-img.png" alt="Image of Project" height="928px" width="800px">
-    <h3 class="text-no-margin margin-top" >{{ title }}</h3>
-    <p>{{ platform }}</p>
-    <p class="w100 accent-color">{{ tools }}</p>
+    <h3 class="text-no-margin margin-top" >{{ project.title }}</h3>
+    <p class="w500">{{ project.platform }}</p>
+    <p class="w300 fs08 accent-color">{{ project.tools }}</p>
     <nav class="project-urls">
         <ol>
-            <li *ngIf="buttons.github" class="project-urls"><a href="#"><i data-feather="github"></i></a></li>
-            <li *ngIf="buttons.googlePlay" class="project-urls"><a href="#">
+            <li *ngIf="project.buttons.github" class="project-urls"><a href="#"><i data-feather="github"></i></a></li>
+            <li *ngIf="project.buttons.gitlab" class="project-urls"><a href="#"><i data-feather="gitlab"></i></a></li>
+            <li *ngIf="project.buttons.googlePlay" class="project-urls"><a href="#">
                 <svg class="feather" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_60_173)">
                         <path d="M12.8438 10.121L3.70538 1.12099M12.8438 10.121L15.1875 7.75257M12.8438 10.121L3.70538 19.121M12.8438 10.121L15.1875 12.4894M3.70538 1.12099L15.1875 7.75257M3.70538 1.12099C3 0.620987 3 1.79613 3 2.36226V17.8797C3 18.4459 3 19.621 3.70538 19.121M15.1875 7.75257L17.5269 9.0538C18.151 9.55663 18.151 10.6889 17.5659 11.1917L15.1875 12.4894M3.70538 19.121L15.1875 12.4894" stroke="#674576" stroke-width="2"/>
@@ -18,9 +18,9 @@
                     </defs>
                 </svg>
             </a></li>
-            <li *ngIf="buttons.figma" class="project-urls"><a href="#"><i data-feather="figma"></i></a></li>
-            <li *ngIf="buttons.external" class="project-urls"><a href="#"><i data-feather="external-link"></i></a></li>
-            <li *ngIf="buttons.project" class="project-urls"><i data-feather="arrow-right-circle"></i></li>
+            <li *ngIf="project.buttons.figma" class="project-urls"><a href="#"><i data-feather="figma"></i></a></li>
+            <li *ngIf="project.buttons.external" class="project-urls"><a href="#"><i data-feather="external-link"></i></a></li>
+            <li *ngIf="project.buttons.project" class="project-urls"><i data-feather="arrow-right-circle"></i></li>
         </ol>
     </nav>
 </div>

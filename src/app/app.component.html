@@ -28,36 +28,19 @@
 data-aos-delay="500" data-aos-offset="200">
   <h2 id="featured-projects-title" class="projects2">Featured Projects</h2>
   
-  <div class="row"><app-featured-project class="col-md-6" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
-  </app-featured-project>
-  
-  <app-featured-project class="col-md-6" title="Binge" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
-  </app-featured-project><app-featured-project class="col-md-6" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
-  </app-featured-project>
-  
-  <app-featured-project class="col-md-6" title="Binge" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2">
-  </app-featured-project></div>
-  
+  <div class="row">
+    <app-featured-project *ngFor="let project of featuredProjects; index as i;" 
+                          class="col-md-6" [project]="project">
+    </app-featured-project>
+  </div>
 </section>
 
 <section class="othersPro" data-aos="fade-up" data-aos-duration="3000">
   <h2 id="featured-projects-title" class="projects2">Other Projects</h2>
   <div class="row other-container"> <!-- Bootstap 4+ based on Flex which make this okey -->
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
-    <app-other-project [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" title="Binge" platform="Android & iOS" tools="Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2"></app-other-project>
+    <app-other-project *ngFor="let project of otherProjects; index as i;" 
+          [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" 
+          [project]="project">
+    </app-other-project>
   </div>
 </section>
