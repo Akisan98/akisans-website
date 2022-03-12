@@ -16,9 +16,19 @@ $max-font-size: 3.8rem;
     padding-top: 20vh
 }
 
-.projects, .othersPro {
-    padding: max(7%, 16px);
+// .projects, .othersPro {
+//     padding:  max(5%, 16px) max(7%, 16px);
+// }
+
+section:nth-child(n+2) {
+    padding: max(5%, 16px) max(7%, 16px);
+    padding-bottom: 0;
 }
+
+section:last-child {
+    padding: max(5%, 16px) max(7%, 16px);
+}
+
 @media (min-width: 992px) {
     .projects2 {
         padding: 0 32px;
@@ -65,6 +75,10 @@ $max-font-size: 3.8rem;
         background-repeat: no-repeat;
         background-position: center right;
         background-size: contain;
+    }
+
+    .hero .content {
+        padding-top: 10vh
     }
 }
 
@@ -127,6 +141,6 @@ h2 {
     margin-bottom: 0;
 }
 
-.w900, span {
+.w900 {
   font-weight: 900;
 }

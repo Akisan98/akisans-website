@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
 import * as feather from 'feather-icons';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ export class AppComponent implements AfterViewInit  {
   ngAfterViewInit() {
     this.elemsPrRow = window.innerWidth >= 1500 ? 4 : 2
     feather.replace();
+    AOS.init();
   }
 
   // Other Projects Elements per Row.

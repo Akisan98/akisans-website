@@ -13,10 +13,11 @@ export class OtherProjectComponent implements OnInit {
   @Input() buttons: ProjectLink = {
     github: "Yes",
     googlePlay: "Yes",
+    figma: "Yes",
     external: "Yes",
     project: "Yes",
   };
-
+  
   constructor() { }
 
   ngOnInit(): void {

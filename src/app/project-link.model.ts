@@ -1,6 +1,7 @@
 export interface ProjectLink {
     github?: string,
     googlePlay?: string,
+    figma?: string,
     external?: string,
     project?: string
 }
