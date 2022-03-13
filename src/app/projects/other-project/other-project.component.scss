@@ -12,24 +12,6 @@
     flex: 1 1 auto;
 }
 
-.project-urls ol {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.project-urls {
-    display: inline-block;
-}
-
-li:nth-child(n+2) {
-    margin: 0 8px;
-}
-
-li:first-child {
-    margin-right: 8px;
-}
-
 h3 {
     font-size: 1.75rem;
     margin-bottom: 0;
@@ -59,16 +41,6 @@ p {
 
 .fs08 {
     font-size: 0.8rem;
-}
-
-.feather {
-    width: 21px;
-    height: 21px;
-    stroke: #674576;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
 }
 
 .accent-color {

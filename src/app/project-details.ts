@@ -2,16 +2,16 @@ import { Project } from "./project-link.model";
 
 export const FEATURED_PROJECTS: Project[] = [
     {
-        title: 'Binge',
+        title: 'Binge V1 / V2',
         platform: 'Android & iOS',
-        tools: 'Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2',
+        tools: 'Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2 (V2)',
         image: '/assets/project-img.png',
         buttons: {
-            github: 'Yes',
-            googlePlay: 'Yes',
-            figma: 'Yes',
-            external: 'Yes',
-            project: 'Yes',
+            github: 'https://github.com/Akisan98/Binge',
+            googlePlay: 'https://play.google.com/store/apps/details?id=ml.akisan.binge',
+            // figma: 'https://www.figma.com/file/2wOM5nbWfPoSs7uXpj8htI/Binge-V2?node-id=0%3A1',
+            external: 'https://v3.akisan.ml/binge/',
+            // project: 'Yes',
         }
     },
 
@@ -21,10 +21,10 @@ export const FEATURED_PROJECTS: Project[] = [
         tools: 'Angular • HTML • CSS • SASS • TypeScript • Bootstrap 5 • RESTful API • JSON',
         image: '/assets/blog2.png',
         buttons: {
-            github: 'Yes',
+            github: 'https://github.com/Akisan98/the-minimal-blog',
             // googlePlay: 'Yes',
-            figma: 'Yes',
-            external: 'Yes',
+            // figma: 'https://www.figma.com/file/g5N8xo5OAPJ9nZokcs3xN8/The-Minimal-Blog?node-id=0%3A1',
+            // external: 'Yes',
             // project: 'Yes',
         }
     },
@@ -35,10 +35,10 @@ export const FEATURED_PROJECTS: Project[] = [
         tools: 'Android • Android Studio • AndroidX • Room • RESTful API • JSON • XML',
         image: '/assets/mist.png',
         buttons: {
-            github: 'Yes',
+            // github: 'Yes',
             // googlePlay: 'Yes',
             // figma: 'Yes',
-            external: 'Yes',
+            external: 'https://v3.akisan.ml/mist/',
             // project: 'Yes',
         }
     },
@@ -52,10 +52,10 @@ export const OTHER_PROJECTS: Project[] = [
         image: '/assets/mist.png',
         buttons: {
             // github: 'Yes',
-            gitlab: 'Yes',
+            // gitlab: 'Yes',
             // googlePlay: 'Yes',
             // figma: 'Yes',
-            external: 'Yes',
+            // external: 'Yes',
             // project: 'Yes',
         }
     },
@@ -67,10 +67,10 @@ export const OTHER_PROJECTS: Project[] = [
         image: '/assets/mist.png',
         buttons: {
             // github: 'Yes',
-            gitlab: 'https://young-forest-16786.herokuapp.com/',
+            // gitlab: 'https://young-forest-16786.herokuapp.com/',
             // googlePlay: 'Yes',
             // figma: 'Yes',
-            external: 'Yes',
+            external: 'https://young-forest-16786.herokuapp.com/',
             // project: 'Yes',
         }
     },
@@ -82,10 +82,24 @@ export const OTHER_PROJECTS: Project[] = [
         image: '/assets/mist.png',
         buttons: {
             // github: 'Yes',
-            gitlab: 'Yes',
+            // gitlab: 'Yes',
             // googlePlay: 'Yes',
-            figma: 'Yes',
-            external: 'Yes',
+            // figma: 'Yes',
+            // external: 'Yes',
+            // project: 'Yes',
+        }
+    },
+
+    {
+        title: 'Chin Chin',
+        platform: 'Android & iOS',
+        tools: 'Android • Flutter • iOS • Figma • RESTful API • JSON',
+        image: '/assets/mist.png',
+        buttons: {
+            github: 'https://github.com/Akisan98/chin_chin',
+            googlePlay: 'https://play.google.com/store/apps/details?id=ml.akisan.party_bud',
+            // figma: 'Yes',
+            // external: 'Yes',
             // project: 'Yes',
         }
     },
@@ -97,9 +111,9 @@ export const OTHER_PROJECTS: Project[] = [
         image: '/assets/mist.png',
         buttons: {
             // github: 'Yes',
-            googlePlay: 'Yes',
+            // googlePlay: 'Yes',
             // figma: 'Yes',
-            external: 'Yes',
+            external: 'https://v2.akisan.ml/my-shows/',
             // project: 'Yes',
         }
     },
