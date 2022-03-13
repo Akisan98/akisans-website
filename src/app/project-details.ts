@@ -19,7 +19,7 @@ export const FEATURED_PROJECTS: Project[] = [
         title: 'The Minimal Blog',
         platform: 'Web (Angular)',
         tools: 'Angular • HTML • CSS • SASS • TypeScript • Bootstrap 5 • RESTful API • JSON',
-        image: '/assets/project-img.png',
+        image: '/assets/blog2.png',
         buttons: {
             github: 'Yes',
             // googlePlay: 'Yes',

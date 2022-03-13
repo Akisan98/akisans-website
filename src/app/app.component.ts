@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, AfterViewInit  {
   }
   
   ngAfterViewInit() {
-    this.elemsPrRow = window.innerWidth >= 1500 ? 4 : 2
+    this.elementsPrRow = window.innerWidth >= 1500 ? 4 : 2
     feather.replace();
     AOS.init();
   }
@@ -37,11 +37,11 @@ export class AppComponent implements OnInit, AfterViewInit  {
   }
 
   // Other Projects Elements per Row.
-  elemsPrRow: number = 1;
+  elementsPrRow: number = 1;
   
   @HostListener('window:resize', ['$event'])
   onResize() { //event
     // 2 -> 6, 4 -> 3
-    this.elemsPrRow = window.innerWidth >= 1500 ? 4 : 2
+    this.elementsPrRow = window.innerWidth >= 1500 ? 4 : 2
   }
 }

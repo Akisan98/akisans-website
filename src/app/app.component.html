@@ -24,8 +24,8 @@
   </div>
 </section>
 
-<section aria-labelledby="featured-projects-title" class="projects" data-aos="fade-up" data-aos-duration="3000"
-data-aos-delay="150" data-aos-offset="250">
+<section aria-labelledby="featured-projects-title" class="projects" data-aos="fade-up" data-aos-duration="2000"
+data-aos-delay="100">
   <h2 id="featured-projects-title" class="projects2">Featured Projects</h2>
   
   <div class="row">
@@ -35,11 +35,11 @@ data-aos-delay="150" data-aos-offset="250">
   </div>
 </section>
 
-<section class="othersPro" data-aos="fade-up" data-aos-duration="3000">
+<section class="othersPro" data-aos="fade-up" data-aos-duration="2000">
   <h2 id="featured-projects-title" class="projects2">Other Projects</h2>
-  <div class="row other-container"> <!-- Bootstap 4+ based on Flex which make this okey -->
+  <div class="row other-container"> <!-- Bootstrap 4+ based on Flex which make this okay -->
     <app-other-project *ngFor="let project of otherProjects; index as i;" 
-          [ngClass]="{'col-md-3' : elemsPrRow === 4, 'col-md-6' : elemsPrRow !== 4}" 
+          [ngClass]="{'col-md-3' : elementsPrRow === 4, 'col-md-6' : elementsPrRow !== 4}" 
           [project]="project">
     </app-other-project>
   </div>
