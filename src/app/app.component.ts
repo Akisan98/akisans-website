@@ -10,9 +10,6 @@ import { Project } from './project-link.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, AfterViewInit  {
-  
-  title = 'Akisan';
-  
   featuredProjects: Project[] = [];
   otherProjects: Project[] = [];
 
@@ -20,15 +17,15 @@ export class AppComponent implements OnInit, AfterViewInit  {
   
   ngOnInit(): void {
     this.getProjects();
+    AOS.init({
+      once: true,
+      duration: 2500,
+    });
   }
   
   ngAfterViewInit() {
     this.elementsPrRow = window.innerWidth >= 1500 ? 4 : 2
     feather.replace();
-    AOS.init({
-      once: true,
-      duration: 2500,
-    });
   }
 
   getProjects() {
