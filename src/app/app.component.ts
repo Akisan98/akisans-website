@@ -11,7 +11,7 @@ import { Project } from './project-link.model';
 })
 export class AppComponent implements OnInit, AfterViewInit  {
   
-  title = 'akisans-website';
+  title = 'Akisan';
   
   featuredProjects: Project[] = [];
   otherProjects: Project[] = [];
@@ -25,7 +25,10 @@ export class AppComponent implements OnInit, AfterViewInit  {
   ngAfterViewInit() {
     this.elementsPrRow = window.innerWidth >= 1500 ? 4 : 2
     feather.replace();
-    AOS.init();
+    AOS.init({
+      once: true,
+      duration: 2500,
+    });
   }
 
   getProjects() {
