@@ -35,8 +35,8 @@ data-aos-delay="100">
   </div>
 </section>
 
-<section class="othersPro" data-aos="fade-up">
-  <h2 id="featured-projects-title" class="projects2">Other Projects</h2>
+<section aria-labelledby="other-projects-title" class="othersPro" data-aos="fade-up">
+  <h2 id="other-projects-title" class="projects2">Other Projects</h2>
   <div class="row other-container"> <!-- Bootstrap 4+ based on Flex which make this okay -->
     <app-other-project *ngFor="let project of otherProjects; index as i;" 
           [ngClass]="{'col-md-3' : elementsPrRow === 4, 'col-md-6' : elementsPrRow !== 4}" 
