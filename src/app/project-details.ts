@@ -5,7 +5,7 @@ export const FEATURED_PROJECTS: Project[] = [
         title: 'Binge V1 / V2',
         platform: 'Android & iOS',
         tools: 'Android • Flutter • iOS • Figma • RESTful API • JSON • OAuth2 (V2)',
-        image: '/assets/project-img.png',
+        image: '/assets/project-img',
         buttons: {
             github: 'https://github.com/Akisan98/Binge',
             googlePlay: 'https://play.google.com/store/apps/details?id=ml.akisan.binge',
@@ -19,12 +19,12 @@ export const FEATURED_PROJECTS: Project[] = [
         title: 'The Minimal Blog',
         platform: 'Web (Angular)',
         tools: 'Angular • HTML • CSS • SASS • TypeScript • Bootstrap 5 • RESTful API • JSON',
-        image: '/assets/blog2.png',
+        image: '/assets/blog',
         buttons: {
             github: 'https://github.com/Akisan98/the-minimal-blog',
             // googlePlay: 'Yes',
             // figma: 'https://www.figma.com/file/g5N8xo5OAPJ9nZokcs3xN8/The-Minimal-Blog?node-id=0%3A1',
-            // external: 'Yes',
+            external: 'https://blog.akisan.ml/',
             // project: 'Yes',
         }
     },
@@ -33,7 +33,7 @@ export const FEATURED_PROJECTS: Project[] = [
         title: 'Mist',
         platform: 'Android',
         tools: 'Android • Android Studio • AndroidX • Room • RESTful API • JSON • XML',
-        image: '/assets/mist.png',
+        image: '/assets/mist',
         buttons: {
             // github: 'Yes',
             // googlePlay: 'Yes',

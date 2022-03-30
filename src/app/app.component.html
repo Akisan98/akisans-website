@@ -1,15 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Akisan</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <a class="navbar-brand" aria-label="Icon of Akisan" href="#">
+      <svg width="35" height="35" viewBox="0 0 172 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M171.94 192H146.877L126.395 138.176H70.4086L77.8141 117.958H118.984L88.6655 36.151C87.6799 33.4844 86.6841 29.1599 85.701 23.2975H85.1618C84.2673 28.718 83.2246 33.0425 82.0624 36.151L52.0132 117.958H52.0518L46.4898 133.143L44.5753 138.098L44.6624 138.131L44.6459 138.176H44.4669L25.198 192H0L74.1124 0H97.5585L171.94 191.999V192Z" fill="black"/>
+      </svg>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="navbar">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#featured-projects-title">Projects</a>
-        <!-- <a class="nav-link" href="#">About</a>
-        <a class="nav-link disabled">Disabled</a> -->
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target="#navbar">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-projects-title" data-bs-toggle="collapse" data-bs-target="#navbar">Projects</a>
+        </li>
+      </ul>
       </div>
     </div>
   </div>

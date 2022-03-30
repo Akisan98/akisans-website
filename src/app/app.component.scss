@@ -3,7 +3,7 @@ $max-font-size: 3.8rem;
 .hero {
     font-family: 'Roboto', Arial;
     min-height: calc(100vh - 56px);
-    background: linear-gradient(rgba(251, 242, 255, .8), rgba(251, 242, 255, .8)), url('/assets/hand-wave-m.png');
+    background: linear-gradient(rgba(251, 242, 255, .8), rgba(251, 242, 255, .8)), url('/assets/hand-wave.webp');
     background-repeat: no-repeat;
     // background-size: contain;
     background-size: auto 65%;
@@ -71,7 +71,7 @@ section:last-child {
 
 @media (min-width: 650px) and (orientation:landscape) {
     .hero {
-        background: url('/assets/hand-wave-m.png'), #FBF2FF;
+        background: url('/assets/hand-wave.webp'), #FBF2FF;
         background-repeat: no-repeat;
         background-position: center right;
         background-size: contain;
@@ -85,7 +85,7 @@ section:last-child {
 /* Desktops */
 @media (min-width: 992px) {
     .hero {
-        background: url('/assets/hand-wave-m.png'), #FBF2FF;
+        background: url('/assets/hand-wave.webp'), #FBF2FF;
         background-repeat: no-repeat;
         background-position: center right;
         background-size: contain;

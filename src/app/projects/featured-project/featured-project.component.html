@@ -1,5 +1,5 @@
 <div class="project-card">
-    <img src="{{ project?.image }}" alt="Image of Project" height="928px" width="800px">
+    <img src="{{ project?.image }}.webp" onerror="this.src=project?.image + '.png'" alt="Image of Project" height="928px" width="800px">
     <h3 class="text-no-margin margin-top" >{{ project.title }}</h3>
     <p class="w500">{{ project.platform }}</p>
     <p class="w300 fs08 accent-color">{{ project.tools }}</p>
