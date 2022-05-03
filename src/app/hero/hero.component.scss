@@ -1,0 +1,169 @@
+$max-font-size: 4rem;
+
+.hero {
+    font-family: 'Roboto',
+        Arial;
+    height: max(calc(100vh - 56px), 450px);
+    background: linear-gradient(rgba(251, 242, 255, .8), rgba(251, 242, 255, .8)),
+        url('/assets/hand-wave.webp');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: rgb(251, 242, 255);
+    padding: 25% 10%;
+}
+
+h1 {
+    font-size: $max-font-size;
+}
+
+.half-size {
+    font-size: calc($max-font-size / 2);
+    margin-bottom: 0;
+}
+
+.one-fourth {
+    font-size: calc($max-font-size / 4);
+}
+
+
+.w900 {
+    font-weight: 900;
+}
+
+.no-display {
+    display: none;
+}
+
+/* Override Bootstrap */
+.btn-primary {
+    background-color: #674576;
+    border-color: #674576;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    &:hover,
+    &:focus,
+    &:active,
+    .active,
+    .open .dropdown-toggle {
+        box-shadow: 0 0 0 0.25rem rgb(103 69 118 / 50%);
+    }
+}
+
+@media (orientation:landscape) and (min-width: 1500px) {
+    $max-font-size: 7rem;
+
+    .hero {
+        padding: 7.5% 0;
+    }
+
+    h1 {
+        font-size: $max-font-size;
+    }
+
+    .half-size {
+        font-size: calc($max-font-size / 2);
+        margin-bottom: 0;
+    }
+
+    .one-fourth {
+        font-size: calc($max-font-size / 4);
+    }
+
+    .btn-primary {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 1200px) and (max-width: 1500px) {
+    $max-font-size: 6rem;
+
+    .hero {
+        padding: 7.5% 0;
+    }
+
+    h1 {
+        font-size: $max-font-size;
+    }
+
+    .half-size {
+        font-size: calc($max-font-size / 2);
+        margin-bottom: 0;
+    }
+
+    .one-fourth {
+        font-size: calc($max-font-size / 4);
+    }
+
+    .btn-primary {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+}
+
+@media (orientation:landscape) and(min-width: 1000px) and (max-width: 1200px) {
+    $max-font-size: 5rem;
+
+    .hero {
+        padding: 10% 0;
+    }
+
+    h1 {
+        font-size: $max-font-size;
+    }
+
+    .half-size {
+        font-size: calc($max-font-size / 2);
+        margin-bottom: 0;
+    }
+
+    .one-fourth {
+        font-size: calc($max-font-size / 4);
+    }
+}
+
+@media (orientation:landscape) and (max-width: 1000px) {
+    $max-font-size: 3rem;
+
+    .hero {
+        padding: 12% 0;
+    }
+
+    h1 {
+        font-size: $max-font-size;
+    }
+
+    .half-size {
+        font-size: calc($max-font-size / 2);
+        margin-bottom: 0;
+    }
+
+    .one-fourth {
+        font-size: calc($max-font-size / 4);
+    }
+}
+
+@media (orientation:landscape) {
+    .hero {
+        background: unset;
+        background-color: rgb(251, 242, 255);
+    }
+
+    .hero .col-sm:nth-child(1) {
+        padding-left: 15%;
+    }
+
+    .hero .col-sm:nth-child(2) {
+        padding-right: 0;
+    }
+
+    .row {
+        margin-right: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

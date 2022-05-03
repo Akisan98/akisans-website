@@ -1,0 +1,15 @@
+<section aria-labelledby="hero-title" class="hero row">
+    <div [ngClass]="landscape ? 'col-sm' : ''">
+        <div>
+            <h1 id="hero-title">Hello <br /> <span class="w900">I'm Akisan</span></h1>
+            <p class="half-size">Software Developer</p>
+            <p class="one-fourth">Backend, Full stack and Mobile</p>
+            <a [href]="'https://www.linkedin.com/in/akisan/'" target="_blank" rel="noopener noreferrer"
+                title="LinkedIn - Private Profile">
+                <button type="button" class="btn btn-primary margin btn-lg extended">LinkedIn</button></a>
+        </div>
+    </div>
+    <div [ngClass]="landscape ? 'col-sm' : 'no-display'">
+        <img src="/assets/hand-wave.webp" alt="Hand-wave">
+    </div>
+</section>
