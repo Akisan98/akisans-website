@@ -51,32 +51,6 @@ h1 {
 }
 
 @media (orientation:landscape) and (min-width: 1500px) {
-    $max-font-size: 7rem;
-
-    .hero {
-        padding: 7.5% 0;
-    }
-
-    h1 {
-        font-size: $max-font-size;
-    }
-
-    .half-size {
-        font-size: calc($max-font-size / 2);
-        margin-bottom: 0;
-    }
-
-    .one-fourth {
-        font-size: calc($max-font-size / 4);
-    }
-
-    .btn-primary {
-        padding-left: 7.5%;
-        padding-right: 7.5%;
-    }
-}
-
-@media (orientation:landscape) and (min-width: 1200px) and (max-width: 1500px) {
     $max-font-size: 6rem;
 
     .hero {
@@ -102,8 +76,34 @@ h1 {
     }
 }
 
+@media (orientation:landscape) and (min-width: 1200px) and (max-width: 1500px) {
+    $max-font-size: 4rem;
+
+    .hero {
+        padding: 7.5% 0;
+    }
+
+    h1 {
+        font-size: $max-font-size;
+    }
+
+    .half-size {
+        font-size: calc($max-font-size / 2);
+        margin-bottom: 0;
+    }
+
+    .one-fourth {
+        font-size: calc($max-font-size / 4);
+    }
+
+    .btn-primary {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+}
+
 @media (orientation:landscape) and(min-width: 1000px) and (max-width: 1200px) {
-    $max-font-size: 5rem;
+    $max-font-size: 4rem;
 
     .hero {
         padding: 10% 0;
